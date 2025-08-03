@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tropical Berry Drizzle Cake </title>
+</head>
+<body>
+  <div class="cake-page">
+    <div class="gallery">
+      <img src="fcake3.jpg" alt="Tropical Berry Drizzle Cake ">
+      
+    </div>
+
+    <div class="cake-details">
+      <h1>Tropical Berry Drizzle Cake </h1>
+      <p class="description"> The Tropical Berry Drizzle Cake is a sun-kissed delight layered with moist vanilla sponge, lush tropical fruit compote, and vibrant berry drizzle cascading across the top.
+
+ </p>
+
+      <div class="price-section">
+        <p class="original">₹1400</p>
+        <p class="offer">₹1050</p>
+        <p class="discount">25% off</p>
+      </div>
+
+      <div class="rating">⭐ 4.9 (6.6K reviews)</div>
+
+      <label for="weight">Select Weight:</label>
+      <select id="weight">
+        <option>0.5 Kg</option>
+        <option>1 Kg</option>
+        <option>2 Kg</option>
+        <option>3 Kg</option>
+        <option>4 Kg</option>
+      </select>
+
+      <label for="message">Cake Message:</label>
+      <input type="text" id="message" placeholder="Happy Birthday !">
+
+      <label for="location">Delivery Location:</label>
+      <input type="text" id="location" placeholder="Enter your area">
+
+      <div class="features">
+        <p>🚚 On Time Delivery</p>
+        <p>🍰 100% Fresh & Hygienic</p>
+        <p>✅ FSSAI Approved</p>
+      </div>
+
+      <p class="delivery-time">Earliest Delivery: 2-3 hours</p>
+
+      <div class="actions">
+        <button>Add to Cart</button>
+        <button class="buy">Buy Now </button>
+      
+  </div>
+</body>
+</html>
+
+<style>
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f6f2;
+  margin: 0;
+  padding: 40px;
+}
+
+.cake-page {
+  display: flex;
+  gap: 40px;
+  max-width: 1000px;
+  margin: auto;
+}
+@media(max-width:420px){
+  .cake-page {
+  display: flex;
+  gap: 40px;
+  max-width: 1000px;
+  margin: auto;
+  flex-direction: column;
+}
+}
+.gallery {
+  flex: 1;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+@media(max-width:420px){
+   .gallery img {
+  width: 310px;
+  height: 250px;
+  border-radius: 10px;
+}
+}
+
+.cake-details {
+  flex: 1;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+@media(max-width:420px){
+  .cake-details {
+  flex: 1;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+}
+
+.cake-details h1 {
+  font-size: 28px;
+  color: #5b2c1d;
+}
+
+.description {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.price-section {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.original {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.offer {
+  color: #e53935;
+  font-weight: bold;
+}
+
+.discount {
+  background-color: #ffeecc;
+  padding: 4px 8px;
+  border-radius: 6px;
+  color: #b15d0c;
+}
+
+.rating {
+  margin: 10px 0;
+  font-weight: bold;
+  color: #ff9800;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+input, select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.features p {
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+.delivery-time {
+  margin-top: 10px;
+  font-style: italic;
+  color: #555;
+}
+
+.actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #ff7043;
+  color: white;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #d84315;
+}
+
+.buy {
+  background-color: #4caf50;
+}
+
+.buy:hover {
+  background-color: #388e3c;
+}
+
+.sku {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #999;
+}
+</style>

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cake Shop</title>
+  <link rel="shortcut icon" href="./cake logo.svg" type="image/x-icon">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #fff;
+    }
+@media(max-width:380px){
+  body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #fff;
+    }
+}
+    .product-grid {
+      display: flex;
+      gap: 90px;
+      flex-wrap: wrap;
+      margin-left: 50px;
+    }
+@media(max-width:380px){
+   .product-grid {
+      display: flex;
+      gap: 90px;
+      flex-wrap: wrap;
+      margin-left: 50px;
+    }
+}
+
+    .product-card {
+      width: 200px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+@media(max-width:380px){
+   .product-card {
+      width: 200px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+}
+
+    .product-image {
+      width: 200px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 10px 10px 0 0;
+    }
+@media(max-width:380px){
+  .product-image {
+      width: 200px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 10px 10px 0 0;
+    }
+}
+
+    .badge {
+      background: gold;
+      color: black;
+      font-size: 12px;
+      font-weight: bold;
+      padding: 2px 6px;
+      border-radius: 3px;
+      margin: 8px;
+      display: inline-block;
+    }
+@media(max-width:380px){
+  .badge {
+      background: gold;
+      color: black;
+      font-size: 12px;
+      font-weight: bold;
+      padding: 2px 6px;
+      border-radius: 3px;
+      margin: 8px;
+      display: inline-block;
+    }
+}
+
+    .product-details {
+      padding: 10px;
+    }
+@media(max-width:380px){
+    .product-details {
+      padding: 10px;
+    }
+}
+
+    .product-title {
+      font-weight: bold;
+      font-size: 16px;
+      margin: 10px 0 5px;
+    }
+@media(max-width:380px){
+   .product-title {
+      font-weight: bold;
+      font-size: 16px;
+      margin: 10px 0 5px;
+    }
+}
+
+    .price {
+      font-size: 16px;
+      color: black;
+    }
+@media(max-width:380px){
+  .price {
+      font-size: 16px;
+      color: black;
+    }
+}
+
+    .old-price {
+      color: gray;
+      margin-left: 8px;
+    }
+@media(max-width:380px){
+    .old-price {
+      color: gray;
+      margin-left: 8px;
+    }
+}
+
+    .discount {
+      color: red;
+      margin-left: 8px;
+      font-size: 12px;
+    }
+@media(max-width:380px){
+    .discount {
+      color: red;
+      margin-left: 8px;
+      font-size: 12px;
+    }
+}
+
+    .rating {
+      margin-top: 5px;
+      color: #555;
+      font-size: 14px;
+    }
+@media(max-width:380px){
+   .rating {
+      margin-top: 5px;
+      color: #555;
+      font-size: 14px;
+    }
+}
+
+    .rating .fa-star {
+      color: green;
+    }
+    @media(max-width:380px){
+   .rating .fa-star {
+      color: green;
+    }
+}
+
+  </style>
+</head>
+
+<body>
+<header style="padding-top: 0%;display: contents;">
+    <h1 style="text-align: center;background-color: chocolate;height: 100px;padding-top: 50px;">Fruit Cakes</h1>
+</header>
+    
+<div class="product-grid">
+  <!-- Product 1 -->
+  <div class="product-card">
+    <a href="./fcake1.html"><img src="fcake1.webp" class="product-image" alt="Royal Berry Almond Bliss"></a>
+    <div class="product-details">
+      <!-- <span class="badge">Best Seller</span> -->
+      <div class="product-title"> Royal Berry Almond Bliss</div>
+      <div class="price">
+        ₹960 <s class="old-price">₹1200</s> <span class="discount">20% OFF</span>
+      </div>
+      <div class="rating">
+        <i class="fa fa-star"></i> 4.9 ★ (6.6K Reviews)
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 2 -->
+  <div class="product-card">
+    <a href="./fcake2.html"><img src="fcake2.webp" class="product-image" alt="Fruitilicious Celebration cake "></a>
+    <div class="product-details">
+      <div class="product-title">Fruitilicious Celebration cake</div>
+      <div class="price">₹765  <s class="old-price">₹900</s> <span class="discount">15% OFF</span></div>
+      <div class="rating">
+        <i class="fa fa-star"></i> 4.9 ★ (11 Reviews)
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 3 -->
+  <div class="product-card">
+    <a href="./fcake3.html"><img src="fcake3.jpg" class="product-image" alt="Tropical Berry Drizzle Cake  "></a>
+    <div class="product-details">
+      <div class="product-title">Tropical Berry Drizzle Cake </div>
+      <div class="price">₹1050  <s class="old-price">₹1400</s> <span class="discount">25% OFF</span></div> 
+      <div class="rating">
+        <i class="fa fa-star"></i> 4.9 ★ (2.6K Reviews)
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 4 -->
+  <div class="product-card">
+    <a href="./fcake4.html"><img src="fcake4.webp" class="product-image" alt="Rainbow Fruit Harmony Cake"></a>
+    <div class="product-details">
+      <div class="product-title">Rainbow Fruit Harmony Cake</div>
+      <div class="price">₹990 <s class="old-price">₹1100</s> <span class="discount">10% OFF</span></div>
+      <div class="rating">
+        <i class="fa fa-star"></i> 4.9 ★ (2.6K Reviews)
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 5 -->
+  <div class="product-card">
+    <a href="./fcake5.html"><img src="fcake5.jpg" class="product-image" alt="Tropical Jewel Fruit Cake "></a>
+    <div class="product-details">
+      <div class="product-title"> Tropical Jewel Fruit Cake</div>
+      <div class="price">₹1040 <s class="old-price">₹1300</s> <span class="discount">20% OFF</span></div>
+      <div class="rating">
+        <i class="fa fa-star"></i> 4.9 ★ (2.6K Reviews)
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 6 -->
+  <div class="product-card">
+    <a href="./fcake6.html"><img src="fcake6.jpg" class="product-image" alt="Constellation Cherry Citrus Cake"></a>
+    <div class="product-details">
+      <div class="product-title">Constellation Cherry Citrus Cake</div>
+      <div class="price">₹935 <s class="old-price">₹1100</s> <span class="discount">15% OFF</span></div>
+      <div class="rating">
+        <i class="fa fa-star"></i> 4.9 ★ (2.6K Reviews)
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 7 -->
+  <div class="product-card">
+    <a href="./fcake7.html"><img src="fcake7.jpg" class="product-image" alt="Exotic Fruit Crown Cake"></a>
+    <div class="product-details">
+      <div class="product-title">Exotic Fruit Crown Cake</div>
+      <div class="price">₹960 <s class="old-price">₹1200</s> <span class="discount">20% OFF</span></div>
+      <div class="rating">
+        <i class="fa fa-star"></i> 4.9 ★ (2.6K Reviews)
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 8-->
+  <div class="product-card">
+    <a href="./fcake8.html"><img src="fcake8.webp" class="product-image" alt="Strawberry Cream Dream Cake"></a>
+    <div class="product-details">
+      <div class="product-title">Strawberry Cream Dream Cake</div>
+      <div class="price">₹1000 <s class="old-price">₹1250</s> <span class="discount">20% OFF</span></div>
+      <div class="rating">
+        <i class="fa fa-star"></i> 4.9 ★ (2.6K Reviews)
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 9 -->
+  <div class="product-card">
+    <a href="./fcake9.html"><img src="fcake9.jpg" class="product-image" alt="Tutti Frutti Tea-Time Cake"></a>
+    <div class="product-details">
+      <div class="product-title">Tutti Frutti Tea-Time Cake</div>
+      <div class="price">₹630 <s class="old-price">₹700</s> <span class="discount">10% OFF</span></div>
+      <div class="rating">
+        <i class="fa fa-star"></i> 4.9 ★ (2.6K Reviews)
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 10 -->
+  <div class="product-card">
+    <a href="./fcake10.html"><img src="fcake10.webp" class="product-image" alt="Midnight Nut Crust Cake"></a>
+    <div class="product-details">
+      <div class="product-title">Midnight Nut Crust Cake </div>
+      <div class="price">₹1040 <s class="old-price">₹1300</s> <span class="discount">20% OFF</span></div>
+      <div class="rating">
+        <i class="fa fa-star"></i> 4.9 ★ (2.6K Reviews)
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 11 -->
+  <div class="product-card">
+    <a href="./fcake11.html"><img src="fcake11.jpg" class="product-image" alt="Golden Raisin Delight Cake"></a>
+    <div class="product-details">
+      <div class="product-title">Golden Raisin Delight Cake</div>
+      <div class="price">₹675 <s class="old-price">₹750</s> <span class="discount">10% OFF</span></div>
+      <div class="rating">
+        <i class="fa fa-star"></i> 4.9 ★ (2.6K Reviews)
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 12 -->
+  <div class="product-card">
+    <a href="./fcake12.html"><img src="fcake12.webp" class="product-image" alt="Velvet Orchard Celebration Cake"></a>
+    <div class="product-details">
+      <div class="product-title">Velvet Orchard Celebration Cake</div>
+      <div class="price">₹1190 <s class="old-price">₹1400</s> <span class="discount">15% OFF</span></div>
+      <div class="rating">
+        <i class="fa fa-star"></i> 4.9 ★ (2.6K Reviews)
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 13 -->
+  <div class="product-card">
+    <a href="./fcake13.html"><img src="fcake13.jpeg" class="product-image" alt="Six-Slice Tropical Crown Cake"></a>
+    <div class="product-details">
+      <div class="product-title">Six-Slice Tropical Crown Cake</div>
+      <div class="price">₹1040 <s class="old-price">₹1300</s> <span class="discount">20% OFF</span></div>
+      <div class="rating">
+        <i class="fa fa-star"></i> 4.9 ★ (2.6K Reviews)
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 14 -->
+  <div class="product-card">
+    <a href="./fcake14.html"><img src="fcake14.webp" class="product-image" alt="Berry Burst Watermelon Cake"></a>
+    <div class="product-details">
+      <div class="product-title">Berry Burst Watermelon Cake</div>
+      <div class="price">₹722 <s class="old-price">₹850</s> <span class="discount">15% OFF</span></div>
+      <div class="rating">
+        <i class="fa fa-star"></i> 4.9 ★ (2.6K Reviews)
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 15 -->
+  <div class="product-card">
+    <a href="./fcake15.html"><img src="fcake15.jpg" class="product-image" alt="Pear & Fig Velvet Layer Cake"></a>
+    <div class="product-details">
+      <div class="product-title">Pear & Fig Velvet Layer Cake</div>
+      <div class="price">₹1200 <s class="old-price">₹1500</s> <span class="discount">20% OFF</span></div>
+      <div class="rating">
+        <i class="fa fa-star"></i> 4.9 ★ (2.6K Reviews)
+      </div>
+    </div>
+  </div>
+
+  
+
+</body>
+</html>

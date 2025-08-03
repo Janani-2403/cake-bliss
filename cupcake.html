@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cake Shop</title>
+  <link rel="shortcut icon" href="./cake logo.svg" type="image/x-icon">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #fff;
+    }
+@media(max-width:380px){
+  body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #fff;
+    }
+}
+    .product-grid {
+      display: flex;
+      gap: 90px;
+      flex-wrap: wrap;
+      margin-left: 50px;
+    }
+@media(max-width:380px){
+  .product-grid {
+      display: flex;
+      gap: 90px;
+      flex-wrap: wrap;
+      margin-left: 50px;
+    }
+}
+
+    .product-card {
+      width: 200px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+@media(max-width:380px){
+   .product-card {
+      width: 200px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+}
+
+    .product-image {
+      width: 200px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 10px 10px 0 0;
+    }
+@media(max-width:380px){
+  .product-image {
+      width: 200px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 10px 10px 0 0;
+    }
+}
+
+    .badge {
+      background: gold;
+      color: black;
+      font-size: 12px;
+      font-weight: bold;
+      padding: 2px 6px;
+      border-radius: 3px;
+      margin: 8px;
+      display: inline-block;
+    }
+@media(max-width:380px){
+  .badge {
+      background: gold;
+      color: black;
+      font-size: 12px;
+      font-weight: bold;
+      padding: 2px 6px;
+      border-radius: 3px;
+      margin: 8px;
+      display: inline-block;
+    }
+}
+
+    .product-details {
+      padding: 10px;
+    }
+@media(max-width:380px){
+  
+    .product-details {
+      padding: 10px;
+    }
+}
+
+    .product-title {
+      font-weight: bold;
+      font-size: 16px;
+      margin: 10px 0 5px;
+    }
+@media(max-width:380px){
+  .product-title {
+      font-weight: bold;
+      font-size: 16px;
+      margin: 10px 0 5px;
+    }
+}
+
+    .price {
+      font-size: 16px;
+      color: black;
+    }
+@media(max-width:380px){
+   .price {
+      font-size: 16px;
+      color: black;
+    }
+}
+
+    .old-price {
+      color: gray;
+      margin-left: 8px;
+    }
+@media(max-width:380px){
+  .old-price {
+      color: gray;
+      margin-left: 8px;
+    }
+}
+
+    .discount {
+      color: red;
+      margin-left: 8px;
+      font-size: 12px;
+    }
+@media(max-width:380px){
+   .discount {
+      color: red;
+      margin-left: 8px;
+      font-size: 12px;
+    }
+}
+
+    .rating {
+      margin-top: 5px;
+      color: #555;
+      font-size: 14px;
+    }
+@media(max-width:380px){
+   .rating {
+      margin-top: 5px;
+      color: #555;
+      font-size: 14px;
+    }
+}
+
+    .rating .fa-star {
+      color: green;
+    }
+    @media(max-width:380px){
+    .rating .fa-star {
+      color: green;
+    }
+}
+
+  </style>
+</head>
+
+<body>
+<header style="padding-top: 0%;display: contents;">
+    <h1 style="text-align: center;background-color: chocolate;height: 100px;padding-top: 50px;">Cup Cakes</h1>
+</header>
+    
+<div class="product-grid">
+  <!-- Product 1 -->
+  <div class="product-card">
+    <a href="./ccake1.html"><img src="ccake1.jpg" class="product-image" alt="Decadent Choco Swirl Cupcakes"></a>
+    <div class="product-details">
+      <!-- <span class="badge">Best Seller</span> -->
+      <div class="product-title">Decadent Choco Swirl Cupcakes </div>
+      <div class="price">
+        ₹480 <s class="old-price">₹600</s> <span class="discount">20% OFF</span>
+      </div>
+      <div class="rating">
+        <i class="fa fa-star"></i> 4.9 ★ (6.6K Reviews)
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 2 -->
+  <div class="product-card">
+    <a href="./ccake2.html"><img src="ccake2.png" class="product-image" alt="Minty Choco Bliss Cupcakes"></a>
+    <div class="product-details">
+      <div class="product-title">Minty Choco Bliss Cupcakes</div>
+      <div class="price">₹520  <s class="old-price">₹650</s> <span class="discount">20% OFF</span></div>
+      <div class="rating">
+        <i class="fa fa-star"></i> 4.9 ★ (11 Reviews)
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 3 -->
+  <div class="product-card">
+    <a href="./ccake3.html"><img src="ccake3.jpg" class="product-image" alt="Raspberry surprise Cupcakes "></a>
+    <div class="product-details">
+      <div class="product-title">Raspberry surprise Cupcakes</div>
+      <div class="price">₹520  <s class="old-price">₹650</s> <span class="discount">20% OFF</span></div> 
+      <div class="rating">
+        <i class="fa fa-star"></i> 4.9 ★ (2.6K Reviews)
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 4 -->
+  <div class="product-card">
+    <a href="./ccake4.html"><img src="ccake4.jpg" class="product-image" alt="Rainbow Sprinkle Party Cupcakes"></a>
+    <div class="product-details">
+      <div class="product-title">Rainbow Sprinkle Party Cupcakes</div>
+      <div class="price">₹552 <s class="old-price">₹650</s> <span class="discount">15% OFF</span></div>
+      <div class="rating">
+        <i class="fa fa-star"></i> 4.9 ★ (2.6K Reviews)
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 5 -->
+  <div class="product-card">
+    <a href="./ccake5.html"><img src="ccake5.jpg" class="product-image" alt="Pink Swirl Celebration Cupcakes "></a>
+    <div class="product-details">
+      <div class="product-title">Pink Swirl Celebration Cupcakes </div>
+      <div class="price">₹510 <s class="old-price">₹600</s> <span class="discount">15% OFF</span></div>
+      <div class="rating">
+        <i class="fa fa-star"></i> 4.9 ★ (2.6K Reviews)
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 6 -->
+  <div class="product-card">
+    <a href="./ccake6.html"><img src="ccake6.avif" class="product-image" alt="Lime Zest Fiesta Cupcakes"></a>
+    <div class="product-details">
+      <div class="product-title">Lime Zest Fiesta Cupcakes</div>
+      <div class="price">₹520 <s class="old-price">₹650</s> <span class="discount">20% OFF</span></div>
+      <div class="rating">
+        <i class="fa fa-star"></i> 4.9 ★ (2.6K Reviews)
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 7 -->
+  <div class="product-card">
+    <a href="./ccake7.html"><img src="ccake7.jpg" class="product-image" alt="Vanilla Sprinkle Joy Cupcakes"></a>
+    <div class="product-details">
+      <div class="product-title">Vanilla Sprinkle Joy Cupcakes</div>
+      <div class="price">₹480 <s class="old-price">₹600</s> <span class="discount">20% OFF</span></div>
+      <div class="rating">
+        <i class="fa fa-star"></i> 4.9 ★ (2.6K Reviews)
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 8-->
+  <div class="product-card">
+    <a href="./ccake8.html"><img src="ccake8.webp" class="product-image" alt="Strawberry Crown Cupcakes"></a>
+    <div class="product-details">
+      <div class="product-title">Strawberry Crown Cupcakes</div>
+      <div class="price">₹520 <s class="old-price">₹650</s> <span class="discount">20% OFF</span></div>
+      <div class="rating">
+        <i class="fa fa-star"></i> 4.9 ★ (2.6K Reviews)
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 9 -->
+  <div class="product-card">
+    <a href="./ccake9.html"><img src="ccake9.avif" class="product-image" alt="Love & Layers Cupcake Box"></a>
+    <div class="product-details">
+      <div class="product-title">Love & Layers Cupcake Box</div>
+      <div class="price">₹552 <s class="old-price">₹650</s> <span class="discount">15% OFF</span></div>
+      <div class="rating">
+        <i class="fa fa-star"></i> 4.9 ★ (2.6K Reviews)
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 10 -->
+  <div class="product-card">
+    <a href="./ccake10.html"><img src="ccake10.jpg" class="product-image" alt="Polka Party Choco Cupcakes"></a>
+    <div class="product-details">
+      <div class="product-title">Polka Party Choco Cupcakes </div>
+      <div class="price">₹510 <s class="old-price">₹600</s> <span class="discount">15% OFF</span></div>
+      <div class="rating">
+        <i class="fa fa-star"></i> 4.9 ★ (2.6K Reviews)
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 11 -->
+  <div class="product-card">
+    <a href="./ccake11.html"><img src="ccake11.webp" class="product-image" alt="Bunny Hop Celebration Cupcakes"></a>
+    <div class="product-details">
+      <div class="product-title">Bunny Hop Celebration Cupcakes</div>
+      <div class="price">₹520 <s class="old-price">₹650</s> <span class="discount">20% OFF</span></div>
+      <div class="rating">
+        <i class="fa fa-star"></i> 4.9 ★ (2.6K Reviews)
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 12 -->
+  <div class="product-card">
+    <a href="./ccake12.html"><img src="ccake12.png" class="product-image" alt="Velvet Charm Cupcake collection"></a>
+    <div class="product-details">
+      <div class="product-title">Velvet Charm Cupcake collection</div>
+      <div class="price">₹552 <s class="old-price">₹650</s> <span class="discount">15% OFF</span></div>
+      <div class="rating">
+        <i class="fa fa-star"></i> 4.9 ★ (2.6K Reviews)
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 13 -->
+  <div class="product-card">
+    <a href="./ccake13.html"><img src="ccake13.jpg" class="product-image" alt="Rainbow Swirl Delight Cupcakes"></a>
+    <div class="product-details">
+      <div class="product-title">Rainbow Swirl Delight Cupcakes</div>
+      <div class="price">₹552 <s class="old-price">₹650</s> <span class="discount">15% OFF</span></div>
+      <div class="rating">
+        <i class="fa fa-star"></i> 4.9 ★ (2.6K Reviews)
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 14 -->
+  <div class="product-card">
+    <a href="./ccake14.html"><img src="ccake14.webp" class="product-image" alt="Caramel Biscuit Swirl Cupcakes"></a>
+    <div class="product-details">
+      <div class="product-title">Caramel Biscuit Swirl Cupcakes</div>
+      <div class="price">₹520 <s class="old-price">₹650</s> <span class="discount">20% OFF</span></div>
+      <div class="rating">
+        <i class="fa fa-star"></i> 4.9 ★ (2.6K Reviews)
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 15 -->
+  <div class="product-card">
+    <a href="./ccake15.html"><img src="ccake15.avif" class="product-image" alt="Lemon Bloom Garden Cupcake"></a>
+    <div class="product-details">
+      <div class="product-title">Lemon Bloom Garden Cupcake</div>
+      <div class="price">₹552 <s class="old-price">₹650</s> <span class="discount">15% OFF</span></div>
+      <div class="rating">
+        <i class="fa fa-star"></i> 4.9 ★ (2.6K Reviews)
+      </div>
+    </div>
+  </div>
+
+  
+
+</body>
+</html>

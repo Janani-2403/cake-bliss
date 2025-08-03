@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Explore Cakes</title>
+  <link rel="shortcut icon" href="./cake logo.svg" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&display=swap" rel="stylesheet"/> -->
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to right, #fff0f5, #ffe4e1);
+      color: #333;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px 20px;
+    }
+
+    header h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 3em;
+      color: #d6336c;
+      animation: bounce 2s infinite;
+    }
+
+    header p {
+      font-size: 1.2em;
+      color: #555;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .cake-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+      padding: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .cake {
+      background: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .cake:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    .cake img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .cake-content {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .cake-content h3 {
+      margin: 10px 0 5px;
+      color: #d6336c;
+    }
+
+    .cake-content p {
+      font-size: 0.95em;
+      color: #666;
+    }
+
+    footer {
+      background-color: #ff69b4;
+      color: white;
+      text-align: center;
+      padding: 25px 10px;
+      margin-top: 40px;
+    }
+
+    /* Animations */
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* ✅ Media Query for Small Devices (max-width: 420px) */
+    @media (max-width: 420px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      header p {
+        font-size: 1em;
+        padding: 0 10px;
+      }
+
+      .cake-gallery {
+        padding: 20px;
+        grid-template-columns: 1fr;
+      }
+
+      .cake img {
+        height: 200px;
+        width: 150;
+      }
+
+      .cake-content h3 {
+        font-size: 1.1em;
+      }
+
+      .cake-content p {
+        font-size: 0.9em;
+      }
+
+      footer {
+        font-size: 0.9em;
+      }
+    }
+    /* Footer */
+.footer {
+  background-color: #ff69b4;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 30px;
+}
+
+@media(max-width:420px){
+.footer {
+  background-color: #ff69b4;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 30px;
+}
+}
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Explore Our Cakes</h1>
+    <p>Discover a delightful world of cakes — from rich chocolate fantasies to light fruit creations, all crafted with care and joy to sweeten your moments.</p>
+  </header>
+
+  <section class="cake-gallery">
+    <div class="cake">
+      <img src="cake1.jpg" alt="chocolate drip cake ">
+      <div class="cake-content">
+        <h3>chocolate drip cake </h3>
+        <p> Rich chocolate layers with drip</p>
+      </div>
+    </div>
+
+     <div class="cake">
+      <img src="cake2.jpg" alt="Sweet Rose Heart Chocolate Cake ">
+      <div class="cake-content">
+        <h3>Sweet Rose Heart Chocolate Cake </h3>
+        <p>Elegant roses on chocolate heart </p>
+      </div>
+    </div>
+
+     <div class="cake">
+      <img src="cake3.webp" alt=" Chocolate Drip Rosette Cake ">
+      <div class="cake-content">
+        <h3> Chocolate Drip Rosette Cake </h3>
+        <p>Rosette-covered chocolate dream cake </p>
+      </div>
+    </div>
+
+     <div class="cake">
+      <img src="cake4.webp" alt="3 Tier Prince/Designer Chocolate Cake ">
+      <div class="cake-content">
+        <h3> 3 Tier Prince/Designer Chocolate Cake</h3>
+        <p>Three-tiered regal chocolate beauty </p>
+      </div>
+    </div>
+
+    <div class="cake">
+      <img src="cake5.webp" alt="Oreo + KitKat Drip Birthday Cake ">
+      <div class="cake-content">
+        <h3>Oreo + KitKat Drip Birthday Cake </h3>
+        <p>Crunchy Oreo meets KitKat drip </p>
+      </div>
+    </div>
+
+    <div class="cake">
+      <img src="cake6.jpg" alt=" Elegant Chocolate Lace Cake">
+      <div class="cake-content">
+        <h3>Elegant Chocolate Lace Cake </h3>
+        <p>Graceful lace, decadent chocolate cake </p>
+      </div>
+    </div>
+
+     <div class="cake">
+      <img src="cake7.jpg" alt=" Choco Cherry Ribbon Delight">
+      <div class="cake-content">
+        <h3>Choco Cherry Ribbon Delight </h3>
+        <p> Delightful ribbons with choco cherry</p>
+      </div>
+    </div>
+
+     <div class="cake">
+      <img src="cake8.jpeg" alt="Triple Cherry Choco Swirl ">
+      <div class="cake-content">
+        <h3> Triple Cherry Choco Swirl</h3>
+        <p>Triple cherry swirl chocolate dream </p>
+      </div>
+    </div>
+
+     <div class="cake">
+      <img src="cake9.webp" alt=" Silver Glaze Chocolate Crown">
+      <div class="cake-content">
+        <h3> Silver Glaze Chocolate Crown</h3>
+        <p>Shiny silver-topped choco cake </p>
+      </div>
+    </div>
+
+     <div class="cake">
+      <img src="cake10.webp" alt="Cacao Nut Truffle Bar ">
+      <div class="cake-content">
+        <h3> Cacao Nut Truffle Bar</h3>
+        <p>Crunchy nuts meet cacao bliss </p>
+      </div>
+    </div>
+
+     <div class="cake">
+      <img src="cake11.jpg" alt="Choco Luxe Crunch Tower ">
+      <div class="cake-content">
+        <h3>Choco Luxe Crunch Tower </h3>
+        <p> Layers of luxe chocolate crunch</p>
+      </div>
+    </div>
+
+     <div class="cake">
+      <img src="cake12.jpg" alt=" Mocha Caramel Dream Slice">
+      <div class="cake-content">
+        <h3>Mocha Caramel Dream Slice </h3>
+        <p>Caramel drizzle on mocha delight </p>
+      </div>
+    </div>
+
+     <div class="cake">
+      <img src="cake13.jpg" alt="Velvet Swirl Choco Block ">
+      <div class="cake-content">
+        <h3>Velvet Swirl Choco Block </h3>
+        <p>Velvety swirls of chocolate bliss </p>
+      </div>
+    </div>
+
+     <div class="cake">
+      <img src="cake14.jpg" alt="Duo Frost Ripple Slice ">
+      <div class="cake-content">
+        <h3>Duo Frost Ripple Slice </h3>
+        <p>Dual frost with rippled delight </p>
+      </div>
+    </div>
+
+     <div class="cake">
+      <img src="cake15.jpg" alt=" Heart of Choco Bliss">
+      <div class="cake-content">
+        <h3>Heart of Choco Bliss </h3>
+        <p> Blissful heart full of chocolate</p>
+      </div>
+    </div>
+
+     <div class="cake">
+      <img src="bcake12.jpg" alt="Choco Twin Delight ">
+      <div class="cake-content">
+        <h3>Choco Twin Delight </h3>
+        <p>Double the chocolatey sweet joy </p>
+      </div>
+    </div>
+
+    <div class="cake">
+      <img src="fcake2.webp" alt="Fruitilicious Celebration cake ">
+      <div class="cake-content">
+        <h3> Fruitilicious Celebration cake</h3>
+        <p>Bursting with fresh fruity flavors </p>
+      </div>
+    </div>
+
+   <div class="cake">
+      <img src="fcake7.jpg" alt="Exotic Fruit Crown Cake">
+      <div class="cake-content">
+        <h3>Exotic Fruit Crown Cake</h3>
+        <p>Crowned with exotic fruity flavors
+
+ </p>
+      </div>
+    </div>
+
+    <a href="products.html"><button style="width: 100px;height: 50px;margin-top: 50px;margin-left: 80px;border: 2px solid blue;background-color: powderblue;color: black;font-size: 15px;font-weight: bold;" class="btn">View all <i class="fa-solid fa-arrow-right" style="color:black;"></i></button></a>
+  </section>
+
+  <footer class="footer">
+  <div class="social-media">
+    <h3>Follow Us</h3>
+    <div class="social-icons">
+      <p><i class="fa-brands fa-facebook" style="color: rgb(39, 39, 146);"></i>@cakeblissofficial</p>
+      <p><i class="fab fa-instagram" style="color: rgb(230, 26, 60)"></i> @cakeblisscakes</p>
+      <p><i class="fa-brands fa-x-twitter" style="color: black;"></i> @blisscakes</p>
+      <p><i class="fab fa-youtube" style="color: red;"></i> Cake Bliss Channel</p>
+    </div>
+  </div>
+  <p>&copy; 2025 Cake Bliss. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

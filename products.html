@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="shortcut icon" href="./cake logo.svg" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Featured Cakes -->
+  <section class="featured">
+    <h2>Our Signature Cakes</h2>
+    <div class="cake-gallery">
+      <a href="./chocolate.html"><img src="./chocolate cake.jpg" alt="Chocolate Cake"><br><h3 style="background-color: lightblue;width: 100px;height: 37px;padding-top: 8px;justify-self: center;border:2px solid blue;">View all</h3></a>
+      <a href="./Birthday.html"><img src="./Birthday cake.webp" alt="Birthday Cake"><br><h3 style="background-color: lightblue;width: 100px;height: 37px;padding-top: 8px;justify-self: center;border:2px solid blue;">View all</h3></a>
+      <a href="./fruitcake.html"><img src="./fruit cake.webp" alt="Fruit Cake"><br><h3 style="background-color: lightblue;width: 100px;height: 37px;padding-top: 8px;justify-self: center;border:2px solid blue;">View all</h3></a>
+      <a href="./cupcake.html"><img src="./cupcake.jpg" alt="Cupcakes"><br><h3 style="background-color: lightblue;width: 100px;height: 37px;padding-top: 8px;justify-self: center;border:2px solid blue;">View all</h3></a>
+    </div>
+  </section>
+ <footer class="footer">
+  <div class="social-media">
+    <h3>Follow Us</h3>
+    <div class="social-icons">
+      <p><i class="fa-brands fa-facebook" style="color: rgb(39, 39, 146);"></i>@cakeblissofficial</p>
+      <p><i class="fab fa-instagram" style="color: rgb(230, 26, 60)"></i> @cakeblisscakes</p>
+      <p><i class="fa-brands fa-x-twitter" style="color: black;"></i> @blisscakes</p>
+      <p><i class="fab fa-youtube" style="color: red;"></i> Cake Bliss Channel</p>
+    </div>
+  </div>
+  <p>&copy; 2025 Cake Bliss. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+
+<style>
+    body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to bottom right, #fff0f5, #ffe4e1);
+  /* color: #333; */
+}
+@media(max-width:420px){
+  body{
+    background-color: white;
+  }
+}
+    /* Featured Cakes */
+.featured {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #fff;
+}
+@media(max-width:420px){
+.featured {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #fff;
+  
+}
+}
+.featured h2 {
+  font-family: 'Pacifico', cursive;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+@media(max-width:420px){
+.featured h2 {
+  font-family: 'Pacifico', cursive;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+}
+.cake-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+@media(max-width:420px){
+.cake-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+}
+.cake-gallery img {
+  width: 100%;
+  height: 200px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+@media(max-width:420px){
+.cake-gallery img {
+  width: 100%;
+  height: 200px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+}
+ /* Footer */
+.footer {
+  background-color: #ff69b4;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 30px;
+}
+
+@media(max-width:420px){
+.footer {
+  background-color: #ff69b4;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 30px;
+}
+}
+
+
+</style>

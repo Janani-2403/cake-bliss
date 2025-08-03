@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cake Shop</title>
+  <link rel="shortcut icon" href="./cake logo.svg" type="image/x-icon">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #fff;
+    }
+@media(max-width:380px){
+ body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #fff;
+    }
+}
+    .product-grid {
+      display: flex;
+      gap: 90px;
+      flex-wrap: wrap;
+      margin-left: 50px;
+    }
+@media(max-width:380px){
+   .product-grid {
+      display: flex;
+      gap: 90px;
+      flex-wrap: wrap;
+      margin-left: 50px;
+    }
+}
+    .product-card {
+      width: 200px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+@media(max-width:380px){
+  .product-card {
+      width: 200px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+}
+    .product-image {
+      width: 200px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 10px 10px 0 0;
+    }
+@media(max-width:380px){
+   .product-image {
+      width: 200px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 10px 10px 0 0;
+    }
+}
+    .badge {
+      background: gold;
+      color: black;
+      font-size: 12px;
+      font-weight: bold;
+      padding: 2px 6px;
+      border-radius: 3px;
+      margin: 8px;
+      display: inline-block;
+    }
+@media(max-width:380px){
+    .badge {
+      background: gold;
+      color: black;
+      font-size: 12px;
+      font-weight: bold;
+      padding: 2px 6px;
+      border-radius: 3px;
+      margin: 8px;
+      display: inline-block;
+    }
+}
+    .product-details {
+      padding: 10px;
+    }
+@media(max-width:380px){
+   .product-details {
+      padding: 10px;
+    }
+}
+    .product-title {
+      font-weight: bold;
+      font-size: 16px;
+      margin: 10px 0 5px;
+    }
+@media(max-width:380px){
+   .product-title {
+      font-weight: bold;
+      font-size: 16px;
+      margin: 10px 0 5px;
+    }
+}
+    .price {
+      font-size: 16px;
+      color: black;
+    }
+@media(max-width:380px){
+   .price {
+      font-size: 16px;
+      color: black;
+    }
+}
+    .old-price {
+      color: gray;
+      margin-left: 8px;
+    }
+@media(max-width:380px){
+  .old-price {
+      color: gray;
+      margin-left: 8px;
+    }
+}
+    .discount {
+      color: red;
+      margin-left: 8px;
+      font-size: 12px;
+    }
+@media(max-width:380px){
+  .discount {
+      color: red;
+      margin-left: 8px;
+      font-size: 12px;
+    }
+}
+    .rating {
+      margin-top: 5px;
+      color: #555;
+      font-size: 14px;
+    }
+@media(max-width:380px){
+     .rating {
+      margin-top: 5px;
+      color: #555;
+      font-size: 14px;
+    }
+}
+    .rating .fa-star {
+      color: green;
+    }
+    @media(max-width:380px){
+   .rating .fa-star {
+      color: green;
+    }
+}
+  </style>
+</head>
+
+<body>
+<header style="padding-top: 0%;display: contents;">
+    <h1 style="text-align: center;background-color: chocolate;height: 100px;padding-top: 50px;">Chocolate Cakes</h1>
+</header>
+    
+<div class="product-grid">
+  <!-- Product 1 -->
+  <div class="product-card">
+    <a href="./cake1.html"><img src="cake1.jpg" class="product-image" alt="chocolate drip cake "></a>
+    <div class="product-details">
+      <!-- <span class="badge">Best Seller</span> -->
+      <div class="product-title">chocolate drip cake </div>
+      <div class="price">
+        ₹549 <s class="old-price">₹599</s> <span class="discount">9% OFF</span>
+      </div>
+      <div class="rating">
+        <i class="fa fa-star"></i> 4.9 ★ (6.6K Reviews)
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 2 -->
+  <div class="product-card">
+    <a href="./cake2.html"><img src="cake2.jpg" class="product-image" alt="Sweet Rose Heart Chocolate Cake"></a>
+    <div class="product-details">
+      <div class="product-title">Sweet Rose Heart Chocolate Cake</div>
+      <div class="price">₹583  <s class="old-price">₹649</s> <span class="discount">10% OFF</span></div>
+      <div class="rating">
+        <i class="fa fa-star"></i> 4.9 ★ (11 Reviews)
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 3 -->
+  <div class="product-card">
+    <a href="./cake3.html"><img src="cake3.webp" class="product-image" alt=" Chocolate Drip Rosette Cake"></a>
+    <div class="product-details">
+      <div class="product-title"> Chocolate Drip Rosette Cake</div>
+      <div class="price">₹637  <s class="old-price">₹749</s> <span class="discount">15% OFF</span></div> 
+      <div class="rating">
+        <i class="fa fa-star"></i> 4.9 ★ (2.6K Reviews)
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 4 -->
+  <div class="product-card">
+    <a href="cake4.html"><img src="cake4.webp" class="product-image" alt="3 Tier Prince/Designer Chocolate Cake"></a>
+    <div class="product-details">
+      <div class="product-title">3 Tier Prince/Designer Chocolate Cake(4 kg)</div>
+      <div class="price">₹9540 <s class="old-price">₹10,600</s> <span class="discount">10% OFF</span></div>
+      <div class="rating">
+        <i class="fa fa-star"></i> 4.9 ★ (2.6K Reviews)
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 5 -->
+  <div class="product-card">
+    <a href="cake5.html"><img src="cake5.webp" class="product-image" alt=" Oreo + KitKat Drip Birthday Cake"></a>
+    <div class="product-details">
+      <div class="product-title"> Oreo + KitKat Drip Birthday Cake</div>
+      <div class="price">₹637 <s class="old-price">₹749</s> <span class="discount">15% OFF</span></div>
+      <div class="rating">
+        <i class="fa fa-star"></i> 4.9 ★ (2.6K Reviews)
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 6 -->
+  <div class="product-card">
+    <a href="./cake6.html"><img src="cake6.jpg" class="product-image" alt="Elegant Chocolate Lace Cake"></a>
+    <div class="product-details">
+      <div class="product-title">Elegant Chocolate Lace Cake</div>
+      <div class="price">₹540 <s class="old-price">₹600</s> <span class="discount">10% OFF</span></div>
+      <div class="rating">
+        <i class="fa fa-star"></i> 4.9 ★ (2.6K Reviews)
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 7 -->
+  <div class="product-card">
+    <a href="./cake7.html"><img src="cake7.jpg" class="product-image" alt="Choco Cherry Ribbon Delight"></a>
+    <div class="product-details">
+      <div class="product-title">Choco Cherry Ribbon Delight</div>
+      <div class="price">₹520 <s class="old-price">₹650</s> <span class="discount">20% OFF</span></div>
+      <div class="rating">
+        <i class="fa fa-star"></i> 4.9 ★ (2.6K Reviews)
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 8-->
+  <div class="product-card">
+    <a href="./cake8.html"><img src="cake8.jpeg" class="product-image" alt=" Triple Cherry Choco Swirl"></a>
+    <div class="product-details">
+      <div class="product-title"> Triple Cherry Choco Swirl</div>
+      <div class="price">₹480 <s class="old-price">₹600</s> <span class="discount">20% OFF</span></div>
+      <div class="rating">
+        <i class="fa fa-star"></i> 4.9 ★ (2.6K Reviews)
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 9 -->
+  <div class="product-card">
+    <a href="./cake9.html"><img src="cake9.webp" class="product-image" alt="Silver Glaze Chocolate Crown"></a>
+    <div class="product-details">
+      <div class="product-title"> Silver Glaze Chocolate Crown</div>
+      <div class="price">₹560 <s class="old-price">₹700</s> <span class="discount">20% OFF</span></div>
+      <div class="rating">
+        <i class="fa fa-star"></i> 4.9 ★ (2.6K Reviews)
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 10 -->
+  <div class="product-card">
+    <a href="./cake10.html"><img src="cake10.webp" class="product-image" alt=" Cacao Nut Truffle Bar"></a>
+    <div class="product-details">
+      <div class="product-title"> Cacao Nut Truffle Bar</div>
+      <div class="price">₹520 <s class="old-price">₹650</s> <span class="discount">20% OFF</span></div>
+      <div class="rating">
+        <i class="fa fa-star"></i> 4.9 ★ (2.6K Reviews)
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 11 -->
+  <div class="product-card">
+    <a href="./cake11.html"><img src="cake11.jpg" class="product-image" alt="Choco Luxe Crunch Tower"></a>
+    <div class="product-details">
+      <div class="product-title">Choco Luxe Crunch Tower</div>
+      <div class="price">₹600 <s class="old-price">₹750</s> <span class="discount">20% OFF</span></div>
+      <div class="rating">
+        <i class="fa fa-star"></i> 4.9 ★ (2.6K Reviews)
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 12 -->
+  <div class="product-card">
+    <a href="./cake12.html"><img src="cake12.jpg" class="product-image" alt="Mocha Caramel Dream Slice"></a>
+    <div class="product-details">
+      <div class="product-title">Mocha Caramel Dream Slice</div>
+      <div class="price">₹544 <s class="old-price">₹680</s> <span class="discount">20% OFF</span></div>
+      <div class="rating">
+        <i class="fa fa-star"></i> 4.9 ★ (2.6K Reviews)
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 13 -->
+  <div class="product-card">
+    <a href="./cake13.html"><img src="cake13.jpg" class="product-image" alt="Velvet Swirl Choco Block"></a>
+    <div class="product-details">
+      <div class="product-title">Velvet Swirl Choco Block</div>
+      <div class="price">₹496 <s class="old-price">₹620</s> <span class="discount">20% OFF</span></div>
+      <div class="rating">
+        <i class="fa fa-star"></i> 4.9 ★ (2.6K Reviews)
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 14 -->
+  <div class="product-card">
+    <a href="./cake14.html"><img src="cake14.jpg" class="product-image" alt="Duo Frost Ripple Slice"></a>
+    <div class="product-details">
+      <div class="product-title">Duo Frost Ripple Slice</div>
+      <div class="price">₹480 <s class="old-price">₹600</s> <span class="discount">20% OFF</span></div>
+      <div class="rating">
+        <i class="fa fa-star"></i> 4.9 ★ (2.6K Reviews)
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 15 -->
+  <div class="product-card">
+    <a href="./cake15.html"><img src="cake15.jpg" class="product-image" alt="Heart of Choco Bliss"></a>
+    <div class="product-details">
+      <div class="product-title">Heart of Choco Bliss</div>
+      <div class="price">₹512 <s class="old-price">₹640</s> <span class="discount">20% OFF</span></div>
+      <div class="rating">
+        <i class="fa fa-star"></i> 4.9 ★ (2.6K Reviews)
+      </div>
+    </div>
+  </div>
+
+  
+
+</body>
+</html>

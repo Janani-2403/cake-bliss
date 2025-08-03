@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cake Shop</title>
+  <link rel="shortcut icon" href="./cake logo.svg" type="image/x-icon">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #fff;
+    }
+@media(max-width:380px){
+ body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #fff;
+    }
+}
+    .product-grid {
+      display: flex;
+      gap: 90px;
+      flex-wrap: wrap;
+      margin-left: 50px;
+    }
+@media(max-width:380px){
+   .product-grid {
+      display: flex;
+      gap: 90px;
+      flex-wrap: wrap;
+      margin-left: 50px;
+    }
+}
+
+    .product-card {
+      width: 200px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+@media(max-width:380px){
+   .product-card {
+      width: 200px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+}
+
+    .product-image {
+      width: 200px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 10px 10px 0 0;
+    }
+@media(max-width:380px){
+   .product-image {
+      width: 200px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 10px 10px 0 0;
+    }
+}
+
+    .badge {
+      background: gold;
+      color: black;
+      font-size: 12px;
+      font-weight: bold;
+      padding: 2px 6px;
+      border-radius: 3px;
+      margin: 8px;
+      display: inline-block;
+    }
+@media(max-width:380px){
+   .badge {
+      background: gold;
+      color: black;
+      font-size: 12px;
+      font-weight: bold;
+      padding: 2px 6px;
+      border-radius: 3px;
+      margin: 8px;
+      display: inline-block;
+    }
+}
+
+    .product-details {
+      padding: 10px;
+    }
+@media(max-width:380px){
+     .product-details {
+      padding: 10px;
+    }
+}
+
+    .product-title {
+      font-weight: bold;
+      font-size: 16px;
+      margin: 10px 0 5px;
+    }
+@media(max-width:380px){
+    .product-title {
+      font-weight: bold;
+      font-size: 16px;
+      margin: 10px 0 5px;
+    }
+}
+
+    .price {
+      font-size: 16px;
+      color: black;
+    }
+@media(max-width:380px){
+   .price {
+      font-size: 16px;
+      color: black;
+    }
+}
+
+    .old-price {
+      color: gray;
+      margin-left: 8px;
+    }
+@media(max-width:380px){
+  .old-price {
+      color: gray;
+      margin-left: 8px;
+    }
+}
+
+    .discount {
+      color: red;
+      margin-left: 8px;
+      font-size: 12px;
+    }
+@media(max-width:380px){
+  
+    .discount {
+      color: red;
+      margin-left: 8px;
+      font-size: 12px;
+    }
+}
+
+    .rating {
+      margin-top: 5px;
+      color: #555;
+      font-size: 14px;
+    }
+@media(max-width:380px){
+  .rating {
+      margin-top: 5px;
+      color: #555;
+      font-size: 14px;
+    }
+}
+
+    .rating .fa-star {
+      color: green;
+    }
+    @media(max-width:380px){
+   .rating .fa-star {
+      color: green;
+    }
+}
+
+  </style>
+</head>
+
+<body>
+<header style="padding-top: 0%;display: contents;">
+    <h1 style="text-align: center;background-color: chocolate;height: 100px;padding-top: 50px;">Birthday Cakes</h1>
+</header>
+    
+<div class="product-grid">
+  <!-- Product 1 -->
+  <div class="product-card">
+    <a href="./bcake1.html"><img src="bcake1.jpg" class="product-image" alt="Cherry Drip Delight"></a>
+    <div class="product-details">
+      <!-- <span class="badge">Best Seller</span> -->
+      <div class="product-title">Cherry Drip Delight </div>
+      <div class="price">
+        ₹899 <s class="old-price">₹1299</s> <span class="discount">30.79% OFF</span>
+      </div>
+      <div class="rating">
+        <i class="fa fa-star"></i> 4.9 ★ (6.6K Reviews)
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 2 -->
+  <div class="product-card">
+    <a href="./bcake2.html"><img src="bcake2.webp" class="product-image" alt="Berry Blush Elegance"></a>
+    <div class="product-details">
+      <div class="product-title">Berry Blush Elegance</div>
+      <div class="price">₹999  <s class="old-price">₹1449</s> <span class="discount">31.03% OFF</span></div>
+      <div class="rating">
+        <i class="fa fa-star"></i> 4.9 ★ (11 Reviews)
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 3 -->
+  <div class="product-card">
+    <a href="./bcake3.html"><img src="bcake3.webp" class="product-image" alt="Velvet Berry Crown"></a>
+    <div class="product-details">
+      <div class="product-title">Velvet Berry Crown</div>
+      <div class="price">₹979  <s class="old-price">₹1399</s> <span class="discount">30.02% OFF</span></div> 
+      <div class="rating">
+        <i class="fa fa-star"></i> 4.9 ★ (2.6K Reviews)
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 4 -->
+  <div class="product-card">
+    <a href="./bcake4.html"><img src="bcake4.jpg" class="product-image" alt="Sunshine Choco Swirl"></a>
+    <div class="product-details">
+      <div class="product-title">Sunshine Choco Swirl</div>
+      <div class="price">₹869 <s class="old-price">₹1199</s> <span class="discount">27.52% OFF</span></div>
+      <div class="rating">
+        <i class="fa fa-star"></i> 4.9 ★ (2.6K Reviews)
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 5 -->
+  <div class="product-card">
+    <a href="./bcake5.html"><img src="bcake5.jpg" class="product-image" alt=" Doraemon Joy Cake"></a>
+    <div class="product-details">
+      <div class="product-title">Doraemon Joy Cake </div>
+      <div class="price">₹949 <s class="old-price">₹1349</s> <span class="discount">29.67% OFF</span></div>
+      <div class="rating">
+        <i class="fa fa-star"></i> 4.9 ★ (2.6K Reviews)
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 6 -->
+  <div class="product-card">
+    <a href="./bcake6.html"><img src="bcake6.jpg" class="product-image" alt="Floral Frost Elegance"></a>
+    <div class="product-details">
+      <div class="product-title">Floral Frost Elegance</div>
+      <div class="price">₹849 <s class="old-price">₹1199</s> <span class="discount">29.19% OFF</span></div>
+      <div class="rating">
+        <i class="fa fa-star"></i> 4.9 ★ (2.6K Reviews)
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 7 -->
+  <div class="product-card">
+    <a href="./bcake7.html"><img src="bcake7.webp" class="product-image" alt="Nutty Caramel Glow"></a>
+    <div class="product-details">
+      <div class="product-title">Nutty Caramel Glow</div>
+      <div class="price">₹799 <s class="old-price">₹1099</s> <span class="discount">27.30% OFF</span></div>
+      <div class="rating">
+        <i class="fa fa-star"></i> 4.9 ★ (2.6K Reviews)
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 8-->
+  <div class="product-card">
+    <a href="./bcake8.html"><img src="bcake8.avif" class="product-image" alt="Choco Heart Celebration"></a>
+    <div class="product-details">
+      <div class="product-title">Choco Heart Celebration</div>
+      <div class="price">₹899 <s class="old-price">₹1249</s> <span class="discount">28.02% OFF</span></div>
+      <div class="rating">
+        <i class="fa fa-star"></i> 4.9 ★ (2.6K Reviews)
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 9 -->
+  <div class="product-card">
+    <a href="./bcake9.html"><img src="bcake9.webp" class="product-image" alt="Choco Rosette Bliss"></a>
+    <div class="product-details">
+      <div class="product-title">Choco Rosette Bliss</div>
+      <div class="price">₹949 <s class="old-price">₹1299</s> <span class="discount">26.97% OFF</span></div>
+      <div class="rating">
+        <i class="fa fa-star"></i> 4.9 ★ (2.6K Reviews)
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 10 -->
+  <div class="product-card">
+    <a href="./bcake10.html"><img src="bcake10.webp" class="product-image" alt="Choco Cherry Dream"></a>
+    <div class="product-details">
+      <div class="product-title">Choco Cherry Dream </div>
+      <div class="price">₹849 <s class="old-price">₹1149</s> <span class="discount">26.11% OFF</span></div>
+      <div class="rating">
+        <i class="fa fa-star"></i> 4.9 ★ (2.6K Reviews)
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 11 -->
+  <div class="product-card">
+    <a href="./bcake11.html"><img src="bcake11.jpg" class="product-image" alt="Cherry Choco Crown"></a>
+    <div class="product-details">
+      <div class="product-title">Cherry Choco Crown</div>
+      <div class="price">₹849 <s class="old-price">₹1199</s> <span class="discount">29.19% OFF</span></div>
+      <div class="rating">
+        <i class="fa fa-star"></i> 4.9 ★ (2.6K Reviews)
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 12 -->
+  <div class="product-card">
+    <a href="./bcake12.html"><img src="bcake12.jpg" class="product-image" alt="Choco Twin Delight"></a>
+    <div class="product-details">
+      <div class="product-title">Choco Twin Delight</div>
+      <div class="price">₹949 <s class="old-price">₹1299</s> <span class="discount">26.90% OFF</span></div>
+      <div class="rating">
+        <i class="fa fa-star"></i> 4.9 ★ (2.6K Reviews)
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 13 -->
+  <div class="product-card">
+    <a href="./bcake13.html"><img src="bcake13.webp" class="product-image" alt="White Forest Charm"></a>
+    <div class="product-details">
+      <div class="product-title">White Forest Charm </div>
+      <div class="price">₹849 <s class="old-price">₹1199</s> <span class="discount">29.19% OFF</span></div>
+      <div class="rating">
+        <i class="fa fa-star"></i> 4.9 ★ (2.6K Reviews)
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 14 -->
+  <div class="product-card">
+    <a href="./bcake14.html"><img src="bcake14.webp" class="product-image" alt="Cherry Snow Swirls"></a>
+    <div class="product-details">
+      <div class="product-title">Cherry Snow Swirls </div>
+      <div class="price">₹849 <s class="old-price">₹1199</s> <span class="discount">29.19% OFF</span></div>
+      <div class="rating">
+        <i class="fa fa-star"></i> 4.9 ★ (2.6K Reviews)
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 15 -->
+  <div class="product-card">
+    <a href="./bcake15.html"><img src="bcake15.jpg" class="product-image" alt="Choco Cherry Royal"></a>
+    <div class="product-details">
+      <div class="product-title">Choco Cherry Royal </div>
+      <div class="price">₹849 <s class="old-price">₹1199</s> <span class="discount">29.19% OFF</span></div>
+      <div class="rating">
+        <i class="fa fa-star"></i> 4.9 ★ (2.6K Reviews)
+      </div>
+    </div>
+  </div>
+
+  
+
+</body>
+</html>
