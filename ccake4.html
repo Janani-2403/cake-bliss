@@ -2,9 +2,180 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> Rainbow Sprinkle Party Cupcakes</title>
-</head>
-<body>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f6f2;
+      margin: 0;
+      padding: 40px;
+    }
+
+    .cake-page {
+      display: flex;
+      gap: 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .gallery {
+      flex: 1;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .cake-details {
+      flex: 1;
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    }
+
+    .cake-details h1 {
+      font-size: 28px;
+      color: #5b2c1d;
+    }
+
+    .description {
+      font-size: 16px;
+      margin: 10px 0;
+    }
+
+    .price-section {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+      margin: 10px 0;
+    }
+
+    .original {
+      text-decoration: line-through;
+      color: #888;
+    }
+
+    .offer {
+      color: #e53935;
+      font-weight: bold;
+    }
+
+    .discount {
+      background-color: #ffeecc;
+      padding: 4px 8px;
+      border-radius: 6px;
+      color: #b15d0c;
+    }
+
+    .rating {
+      margin: 10px 0;
+      font-weight: bold;
+      color: #ff9800;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    .features p {
+      margin: 6px 0;
+      font-size: 14px;
+    }
+
+    .delivery-time {
+      margin-top: 10px;
+      font-style: italic;
+      color: #555;
+    }
+
+    .actions {
+      display: flex;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #ff7043;
+      color: white;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #d84315;
+    }
+
+    .buy {
+      background-color: #4caf50;
+    }
+
+    .buy:hover {
+      background-color: #388e3c;
+    }
+
+    .sku {
+      margin-top: 20px;
+      font-size: 12px;
+      color: #999;
+    }
+
+    /* Mobile Responsive */
+    @media (max-width: 480px) {
+      .cake-page {
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+      }
+
+        .gallery img {
+        width: 100%;
+        height: auto;
+        padding: 0px;
+
+      }
+
+      .cake-details {
+        margin-top: 0;
+        padding: 15px;
+        width: 250px;
+        
+      }
+
+      .cake-details h1 {
+        font-size: 24px;
+      }
+
+      .description, .rating, .features p, .delivery-time {
+        font-size: 14px;
+      }
+
+      .actions {
+        flex-direction: column;
+      }
+
+      button {
+        width: 100%;
+      }
+    }
+  </style>
+</head><body>
   <div class="cake-page">
     <div class="gallery">
       <img src="ccake4.jpg" alt=" Rainbow Sprinkle Party Cupcakes">

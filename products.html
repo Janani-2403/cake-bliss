@@ -42,63 +42,33 @@
   background: linear-gradient(to bottom right, #fff0f5, #ffe4e1);
   /* color: #333; */
 }
-@media(max-width:420px){
-  body{
-    background-color: white;
-  }
-}
+
     /* Featured Cakes */
 .featured {
   text-align: center;
   padding: 60px 20px;
   background-color: #fff;
 }
-@media(max-width:420px){
-.featured {
-  text-align: center;
-  padding: 60px 20px;
-  background-color: #fff;
-  
-}
-}
+
 .featured h2 {
   font-family: 'Pacifico', cursive;
   font-size: 36px;
   margin-bottom: 40px;
 }
-@media(max-width:420px){
-.featured h2 {
-  font-family: 'Pacifico', cursive;
-  font-size: 36px;
-  margin-bottom: 40px;
-}
-}
+
 .cake-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
 }
-@media(max-width:420px){
-.cake-gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-}
-}
+
 .cake-gallery img {
   width: 100%;
   height: 200px;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
-@media(max-width:420px){
-.cake-gallery img {
-  width: 100%;
-  height: 200px;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-}
+
  /* Footer */
 .footer {
   background-color: #ff69b4;
@@ -108,14 +78,54 @@
   margin-top: 30px;
 }
 
-@media(max-width:420px){
-.footer {
-  background-color: #ff69b4;
-  color: white;
-  text-align: center;
-  padding: 30px 20px;
-  margin-top: 30px;
-}
+
+@media screen and (max-width: 768px) {
+  body {
+    background-color: #ffffff;
+    padding: 0;
+    margin: 0;
+  }
+
+  .featured {
+    padding: 30px 10px;
+  }
+
+  .featured h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+
+  .cake-gallery {
+    grid-template-columns: 1fr; /* stack vertically */
+    gap: 15px;
+  }
+
+  .cake-gallery img {
+    height: auto;
+    max-height: 200px;
+    border-radius: 10px;
+  }
+
+  .cake-gallery h3 {
+    font-size: 16px;
+    width: 90px;
+    height: 34px;
+    padding-top: 6px;
+    margin: auto;
+  }
+
+  .footer {
+    padding: 20px 10px;
+  }
+
+  .footer h3 {
+    font-size: 20px;
+  }
+
+  .footer p {
+    font-size: 14px;
+    margin: 5px 0;
+  }
 }
 
 

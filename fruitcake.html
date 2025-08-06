@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cake Shop</title>
   <link rel="shortcut icon" href="./cake logo.svg" type="image/x-icon">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
@@ -13,28 +14,13 @@
       padding: 20px;
       background: #fff;
     }
-@media(max-width:380px){
-  body {
-      font-family: 'Roboto', sans-serif;
-      margin: 0;
-      padding: 20px;
-      background: #fff;
-    }
-}
+
     .product-grid {
       display: flex;
       gap: 90px;
       flex-wrap: wrap;
       margin-left: 50px;
     }
-@media(max-width:380px){
-   .product-grid {
-      display: flex;
-      gap: 90px;
-      flex-wrap: wrap;
-      margin-left: 50px;
-    }
-}
 
     .product-card {
       width: 200px;
@@ -43,15 +29,6 @@
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
       overflow: hidden;
     }
-@media(max-width:380px){
-   .product-card {
-      width: 200px;
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      overflow: hidden;
-    }
-}
 
     .product-image {
       width: 200px;
@@ -59,14 +36,6 @@
       object-fit: cover;
       border-radius: 10px 10px 0 0;
     }
-@media(max-width:380px){
-  .product-image {
-      width: 200px;
-      height: 120px;
-      object-fit: cover;
-      border-radius: 10px 10px 0 0;
-    }
-}
 
     .badge {
       background: gold;
@@ -78,106 +47,110 @@
       margin: 8px;
       display: inline-block;
     }
-@media(max-width:380px){
-  .badge {
-      background: gold;
-      color: black;
-      font-size: 12px;
-      font-weight: bold;
-      padding: 2px 6px;
-      border-radius: 3px;
-      margin: 8px;
-      display: inline-block;
-    }
-}
 
     .product-details {
       padding: 10px;
     }
-@media(max-width:380px){
-    .product-details {
-      padding: 10px;
-    }
-}
 
     .product-title {
       font-weight: bold;
       font-size: 16px;
       margin: 10px 0 5px;
     }
-@media(max-width:380px){
-   .product-title {
-      font-weight: bold;
-      font-size: 16px;
-      margin: 10px 0 5px;
-    }
-}
 
     .price {
       font-size: 16px;
       color: black;
     }
-@media(max-width:380px){
-  .price {
-      font-size: 16px;
-      color: black;
-    }
-}
 
     .old-price {
       color: gray;
       margin-left: 8px;
     }
-@media(max-width:380px){
-    .old-price {
-      color: gray;
-      margin-left: 8px;
-    }
-}
 
     .discount {
       color: red;
       margin-left: 8px;
       font-size: 12px;
     }
-@media(max-width:380px){
-    .discount {
-      color: red;
-      margin-left: 8px;
-      font-size: 12px;
-    }
-}
 
     .rating {
       margin-top: 5px;
       color: #555;
       font-size: 14px;
     }
-@media(max-width:380px){
-   .rating {
-      margin-top: 5px;
-      color: #555;
-      font-size: 14px;
-    }
-}
 
     .rating .fa-star {
       color: green;
     }
-    @media(max-width:380px){
-   .rating .fa-star {
-      color: green;
-    }
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 26px;
+    padding-top: 30px;
+    height: 80px;
+  }
+
+  .product-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin: 0;
+    padding: 10px;
+  }
+
+  .product-card {
+    width: 90%;
+    margin: 0 auto;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .product-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+
+  .product-details {
+    text-align: center;
+    padding: 10px 5px;
+  }
+
+  .product-title {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .price {
+    font-size: 15px;
+  }
+
+  .old-price {
+    font-size: 14px;
+  }
+
+  .discount {
+    font-size: 12px;
+    color: red;
+  }
+
+  .rating {
+    font-size: 13px;
+    margin-top: 5px;
+  }
+
+  .rating .fa-star {
+    font-size: 14px;
+  }
 }
 
   </style>
 </head>
-
 <body>
 <header style="padding-top: 0%;display: contents;">
-    <h1 style="text-align: center;background-color: chocolate;height: 100px;padding-top: 50px;">Fruit Cakes</h1>
+  <h1 style="text-align: center;background-color: chocolate;height: 100px;padding-top: 50px;">Fruit Cakes</h1>
 </header>
-    
+
 <div class="product-grid">
   <!-- Product 1 -->
   <div class="product-card">
