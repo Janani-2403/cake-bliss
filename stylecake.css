@@ -120,7 +120,7 @@ body {
   border-radius: 30px;
   font-weight: bold;
   width: 75%;
-  margin-left: 50px;
+  margin-left: 5px;
   border: none;
   font-size: 25px;
 }
@@ -221,6 +221,7 @@ body {
     width: 100%;
     background-size: cover;
     background-color: #ff69b4;
+    height: 35px;
     overflow: visible; /* Ensure nothing is clipped */
   }
 
@@ -312,6 +313,9 @@ body {
 }
   .cake-gallery {
     grid-template-columns: 1fr;
+  }
+  .cake-gallery img{
+    width: 250px;
   }
 .booking{
  text-align: center;

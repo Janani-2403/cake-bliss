@@ -9,6 +9,34 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+  
+  <!-- Header and Navigation -->
+  <header>
+   <div class="navbar">
+  <div class="logo">
+    <i class="fas fa-birthday-cake" style="color: brown;"></i> Cake Bliss
+  </div>
+
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="products.html">Products</a>
+    <a href="booking.html">Booking</a>
+  </div>
+
+  <!-- Hamburger only for mobile -->
+  <div class="dropdown mobile-dropdown">
+    <button class="dropbtn">
+      <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="products.html">Products</a>
+      <a href="booking.html">Booking</a>
+    </div>
+  </div>
+</div>
     <!-- Featured Cakes -->
   <section class="featured">
     <h2>Our Signature Cakes</h2>
@@ -41,6 +69,86 @@
   font-family: 'Roboto', sans-serif;
   background: linear-gradient(to bottom right, #fff0f5, #ffe4e1);
   /* color: #333; */
+}
+.navbar {
+  background: #ff69b4;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  /* flex-wrap: nowrap; */
+}
+.logo {
+  font-family: 'Pacifico', cursive;
+  font-size: 30px;
+  color: white;
+}
+/* 🔴 By default: hide hamburger dropdown (for desktop) */
+.mobile-dropdown {
+  display: none;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  font-size: 25px;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  
+}
+.nav-links a:hover {
+  color: #870c2f;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+
+  
+
+}
+/* .navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+} */
+
+.dropdown-content {
+  display: none;
+  /* position: absolute; */
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  float: inline-start;
+  
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  width: 1200px;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: #870c2f;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
     /* Featured Cakes */
@@ -85,7 +193,79 @@
     padding: 0;
     margin: 0;
   }
+ .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 12px 16px; Add horizontal padding */
+    width: 100%;
+    background-size: cover;
+    background-color: #ff69b4;
+    height: 35px;
+    overflow: visible; /* Ensure nothing is clipped */
+  }
 
+  .nav-links {
+    display: none; /* hide full nav links on mobile */
+  }
+  .nav-links a {
+    display: none; /* Hide normal links on mobile */
+  }
+
+ .mobile-dropdown {
+    display: block;
+  }
+
+  .mobile-dropdown .dropbtn {
+    background: none;
+    border: none;
+    font-size: 28px; /* Ensure visibility */
+    padding: 10px;
+    margin: 0;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+  }
+
+  .mobile-dropdown .dropbtn i {
+    font-size: 28px; /* icon size */
+  }
+
+  .mobile-dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 16px;
+    background-color: #f9f9f9;
+    width: 180px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+  }
+
+  .mobile-dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .mobile-dropdown .dropdown-content a {
+    padding: 12px;
+    text-decoration: none;
+    color: black;
+    display: block;
+  }
+
+  .mobile-dropdown .dropdown-content a:hover {
+    background-color: #eee;
+    color: #870c2f;
+  }  .hero-section{
+  background-size: cover;
+  width: 100%;
+  background-image:url(cake\ background.avif);
+}
+.logo {
+    font-size: 24px;
+  }
   .featured {
     padding: 30px 10px;
   }
@@ -101,9 +281,10 @@
   }
 
   .cake-gallery img {
-    height: auto;
-    max-height: 200px;
+    height: 200px;
+    /* max-height: 200px; */
     border-radius: 10px;
+    width: 250px;
   }
 
   .cake-gallery h3 {

@@ -84,6 +84,24 @@
       color: green;
     }
 
+    .previous-button {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.previous-button a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: chocolate;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.previous-button a:hover {
+  background-color: #a0522d;
+}
     @media screen and (max-width: 768px) {
   header h1 {
     font-size: 26px;
@@ -143,8 +161,16 @@
   .rating .fa-star {
     font-size: 14px;
   }
-}
+  .previous-button {
+    margin: 20px 0;
+  }
 
+  .previous-button a {
+    width: 80%;
+    padding: 12px 0;
+    font-size: 16px;
+  }
+}
   </style>
 </head>
 <body>
@@ -335,6 +361,10 @@
       </div>
     </div>
   </div>
+ <!-- Previous Button Section -->
+<div class="previous-button">
+  <a href="products.html"><i class="fa-solid fa-arrow-left" style="color: #fcfcfd;"></i> Previous</a>
+</div>
 
   
 
